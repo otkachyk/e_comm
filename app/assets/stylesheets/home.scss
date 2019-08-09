@@ -1,0 +1,87 @@
+$namespace: '.home';
+
+#{$namespace} {
+  width: 100%;
+  height: 100vh;
+}
+
+#{$namespace}--main-section {
+  display: flex;
+  height: 650px;
+}
+
+#{$namespace}--header {
+  display: flex;
+  flex: 1 1 auto;
+  height: 100px;
+}
+
+#{$namespace}--intro {
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  height: 100%;
+}
+
+#{$namespace}--categories-list {
+  align-items: center;
+  display: inherit;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+#{$namespace}--category-item {
+  margin: $margin * 3;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+
+  a {
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #555b5d;
+    color: #555b5d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    &:hover {
+      color: #e86455;
+      border: 1px solid #e86455;
+    }
+
+    .fa {
+      font-size: 2em;
+      line-height: 1.3em;
+    }
+  }
+}
+
+#{$namespace}--buttons-section {
+  display: inherit;
+  height: 155px;
+}
+
+#{$namespace}--main-button {
+  background-color: #6b8d98;
+  cursor: pointer;
+  display: flex;
+  flex: 1 1 auto;
+  height: auto;
+
+  &:hover {
+    background-color: #3e6b78;
+  }
+}
+
+#{$namespace}--slider {
+  background: #e86455;
+  display: inherit;
+  flex: 1.3;
+  height: 100%;
+}

@@ -1,0 +1,46 @@
+.layout
+  .home
+    .home--header
+      .home--header-menu
+        .logo
+        %ul
+          %li
+            = link_to 'Home', '#'
+          %li
+            = link_to 'Products', '#'
+          %li
+            = link_to 'Contacts', '#'
+    .home--main-section
+      .home--intro
+        .home--categories-list
+          .home--category-item
+            = link_to '#' do
+              %i.fa.fa-television
+              %span Телевізори
+          .home--category-item
+            = link_to '#' do
+              %i.fa.fa-laptop
+              %span Ноутбуки
+          .home--category-item
+            = link_to '#' do
+              %i.fa.fa-mobile
+              %span Мобільні телефони
+          .home--category-item
+            = link_to '#' do
+              %i.fa.fa-print
+              %span Периферія
+          .home--category-item
+            = link_to '#' do
+              %i.fa.fa-desktop
+              %span Комп'ютери
+          .home--category-item
+            = link_to '#' do
+              %i.fa.fa-arrow-right
+              %span Всі категорії
+
+        .home--buttons-section
+          .home--main-button
+          .home--main-button
+      .home--slider
+        swiper
+    .home--recently-visited
