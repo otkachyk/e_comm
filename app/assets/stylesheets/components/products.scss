@@ -1,0 +1,23 @@
+$namespace: '.product';
+
+
+#{$namespace} {
+}
+
+#{$namespace}--container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#{$namespace}--item {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 300px;
+}
+
+#{$namespace}--image {
+  width: 250px;
+  height: 250px;
+  background-color: #aaaaaa;
+}

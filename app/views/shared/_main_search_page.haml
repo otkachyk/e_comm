@@ -1,0 +1,9 @@
+.product
+  .product--container
+    - products.each do |product|
+      .product--item
+        .product--image
+        .product--description
+          = product.attributes
+
+= paginate products

@@ -13,3 +13,14 @@
     description: Faker::Lorem.paragraphs(number: 1)
   )
 end
+
+
+100.times do
+  Laptop.create(
+    title: Faker::Company.catch_phrase,
+    description: Faker::Lorem.paragraphs(number: 1),
+    article_number: Faker::Company.sic_code,
+    price: Faker::Number.number(digits: 5),
+    model: Faker::Company.buzzword
+  )
+end

@@ -1,15 +1,5 @@
 .layout
   .home
-    .home--header
-      .home--header-menu
-        .logo
-        %ul
-          %li
-            = link_to 'Home', '#'
-          %li
-            = link_to 'Products', '#'
-          %li
-            = link_to 'Contacts', '#'
     .home--main-section
       .home--intro
         .home--categories-list
@@ -18,7 +8,7 @@
               %i.fa.fa-television
               %span Телевізори
           .home--category-item
-            = link_to '#' do
+            = link_to laptops_path do
               %i.fa.fa-laptop
               %span Ноутбуки
           .home--category-item
