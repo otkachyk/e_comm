@@ -1,23 +1,59 @@
 $namespace: '.product';
 
-
 #{$namespace} {
+  margin: 30px;
 }
 
 #{$namespace}--container {
   display: flex;
   flex-wrap: wrap;
+  min-width: 900px;
 }
 
-#{$namespace}--item {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  width: 300px;
+#{$namespace}--mini-overview {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  margin: 0 floor($margin / 2) floor($margin / 2) ;
+  box-shadow: 0px 0px 2px 0px rgba(219,219,219,1);
+
+  &:hover {
+
+    #{$namespace}--full-overview {
+      box-shadow: 0px 0px 8px 0px rgba(219,219,219,1);
+      z-index: 2;
+    }
+
+    #{$namespace}--description {
+      display: block;
+    }
+  }
+}
+
+#{$namespace}--full-overview {
+  background-color: white;
+  overflow: hidden;
+  position: absolute;
+  padding: 0 $padding;
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+
+#{$namespace}--price {
+  color: #e31837;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#{$namespace}--description {
+  display: none;
+  margin-bottom: floor($margin * 2);
+  font-size: .8em;
 }
 
 #{$namespace}--image {
-  width: 250px;
-  height: 250px;
-  background-color: #aaaaaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

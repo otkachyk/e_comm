@@ -1,5 +1,5 @@
 class LaptopsController < ApplicationController
   def index
-    @laptops = Laptop.select(:title, :price).page params[:page]
+    @laptops = Laptop.select(:id, :title, :price, :description).page params[:page]
   end
 end

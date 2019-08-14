@@ -13,6 +13,6 @@
 #
 
 class Laptop < ApplicationRecord
-  paginates_per 20
+  paginates_per 26
 
 end
