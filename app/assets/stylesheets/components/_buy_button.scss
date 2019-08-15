@@ -1,0 +1,15 @@
+$namespace: '.buy-button';
+
+#{$namespace}--small {
+  background-color: #CD0926;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: floor($padding / 2) $padding;
+  transition: background-color .1s;
+
+  &:hover {
+    background-color: #ef3b35;
+  }
+}

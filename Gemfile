@@ -20,6 +20,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
+
+gem 'jquery-rails'            # adds jquery, ujs and testing function
+gem 'jquery-turbolinks'       # changes onload action for jquery to work with turbolinks
+gem 'jquery-ui-rails'         # adds jquery-ui
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

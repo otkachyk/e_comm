@@ -7,17 +7,18 @@ $namespace: '.product';
 #{$namespace}--container {
   display: flex;
   flex-wrap: wrap;
-  min-width: 900px;
 }
 
 #{$namespace}--mini-overview {
   position: relative;
   width: 250px;
   height: 300px;
-  margin: 0 floor($margin / 2) floor($margin / 2) ;
+  margin: 0 floor($margin / 5) floor($margin / 3) ;
+  border-radius: 5px;
   box-shadow: 0px 0px 2px 0px rgba(219,219,219,1);
 
   &:hover {
+    border-radius: 10px 10px 0 0;
 
     #{$namespace}--full-overview {
       box-shadow: 0px 0px 8px 0px rgba(219,219,219,1);
@@ -33,17 +34,43 @@ $namespace: '.product';
 #{$namespace}--full-overview {
   background-color: white;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   padding: 0 $padding;
   text-align: center;
   width: 100%;
   left: 0;
+  top: 0px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  .product-link-wrapper {
+    min-height: 240px;
+  }
+}
+
+#{$namespace}--title {
+  margin-bottom: $margin;
+  font-size: .9em;
+  color: #494554;
+  text-align: left;
 }
 
 #{$namespace}--price {
   color: #e31837;
-  font-weight: 600;
-  font-size: 1em;
+  font-size: 1.2em;
+  background-color: #AEA9BA1F;
+  padding: floor($padding / 2);
+  border-radius: 5px;
+
+  .price-number {
+
+  }
+
+  .currency {
+    font-size: 0.7em;
+  }
 }
 
 #{$namespace}--description {
@@ -56,4 +83,19 @@ $namespace: '.product';
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#{$namespace}--controls {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: floor($margin / 2) 0;
+}
+
+#{$namespace}--compare {
+  color: #494554AA;
+
+  .fa:hover {
+      color: #5C52D8;
+  }
 }
