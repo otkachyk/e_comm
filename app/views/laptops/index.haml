@@ -1,1 +1,3 @@
-= render 'shared/main_search_page', products: @laptops
+.flex-layout
+  = render 'shared/main_search_page_filter', filter_for: "Laptop::MAIN_FILTERS"
+  = render 'shared/main_search_page', products: @laptops

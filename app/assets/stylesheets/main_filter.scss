@@ -1,0 +1,9 @@
+$namespace: '.main-filter';
+
+#{$namespace} {
+  display: flex;
+  flex-basis: 240px;
+  flex-shrink: 0;
+  height: 1000px;
+  background-color: red;
+}

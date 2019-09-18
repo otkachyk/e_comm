@@ -1,7 +1,10 @@
 $namespace: '.product';
 
 #{$namespace} {
-  margin: 30px;
+  // width: 70%;
+  // margin: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 #{$namespace}--container {
@@ -11,10 +14,10 @@ $namespace: '.product';
 
 #{$namespace}--mini-overview {
   position: relative;
-  width: 250px;
   height: 300px;
-  margin: 0 floor($margin / 5) floor($margin / 3) ;
-  border-radius: 5px;
+  flex: 1 0 15%;
+  margin: 5px;
+  border-radius: 15px;
   box-shadow: 0px 0px 2px 0px rgba(219,219,219,1);
 
   &:hover {
@@ -40,7 +43,7 @@ $namespace: '.product';
   width: 100%;
   left: 0;
   top: 0px;
-  border-radius: 10px;
+  border-radius: 15px;
 
   display: flex;
   flex-direction: column;
@@ -64,12 +67,8 @@ $namespace: '.product';
   padding: floor($padding / 2);
   border-radius: 5px;
 
-  .price-number {
-
-  }
-
   .currency {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 }
 
@@ -89,11 +88,12 @@ $namespace: '.product';
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: floor($margin / 2) 0;
+  margin-bottom: $margin;
 }
 
 #{$namespace}--compare {
   color: #494554AA;
+  cursor: pointer;
 
   .fa:hover {
       color: #5C52D8;

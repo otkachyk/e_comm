@@ -1,0 +1,33 @@
+$namespace: '.item-overview';
+
+
+#{$namespace} {
+  width: 100%;
+}
+
+#{$namespace}--container {
+  width: 100%;
+}
+
+#{$namespace}--main-info {
+  display: flex;
+}
+
+#{$namespace}--slider-images {
+  background-color: purple;
+  width: 50%;
+  height: 450px;
+}
+
+#{$namespace}--info-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+
+#{$namespace}--buy-actions-section {
+  display: flex;
+  background-color: cyan;
+}

@@ -25,3 +25,30 @@
     width: 100%;
   }
 }
+
+
+.flex-layout {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1966px;
+
+
+  @media all and (max-width: $widescreen-view-min) {
+    width: 100%;
+  }
+}
+
+.wrapped-layout {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1600px;
+
+
+  @media all and (max-width: $widescreen-view-min) {
+    width: 100%;
+  }
+}
+
+.red {
+  color: red;
+}

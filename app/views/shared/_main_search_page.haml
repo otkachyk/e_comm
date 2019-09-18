@@ -1,29 +1,27 @@
-.layout
-  .product
-    .product--container
-      - products.each do |product|
-        .product--mini-overview
-          .product--full-overview
-            = link_to product_path(product), class: 'product-link-wrapper' do
-              .product--image
-                %img{ src: 'https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/m/b/mba-pfopen-spcgry-ww-en.tif-screen_1_2.jpg' }
-              .product--title
-                %span.product-title= product.title
-            .product--short-info
-              .product--controls
-                .product--price
-                  %span.price-number= product.price
-                  %span.currency= "грн"
-                .product--compare
-                  %i.fa.fa-balance-scale{ title: "Додати до порівняння"}
-                .product--buy_button
-                  = render 'components/buy_button_small'
-              .product--description
-                = product.description
-                = "#{product.price} uah"
-                = product.description
-                = product.description
-              -# .product--description
-                = product.attributes
+.product
+  .product--container
+    - products.each do |product|
+      .product--mini-overview
+        .product--full-overview
+          = link_to polymorphic_path(product), class: 'product-link-wrapper' do
+            .product--image
+              %img{ src: 'https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/m/b/mba-pfopen-spcgry-ww-en.tif-screen_1_2.jpg' }
+            .product--title
+              %span.product-title= product.title
+          .product--short-info
+            .product--controls
+              .product--price
+                %span.price-number= product.price
+                %span.currency= "₴"
+              .product--compare
+                %i.fa.fa-balance-scale{ title: "Додати до порівняння"}
+              .product--buy_button
+                = render 'components/buy_button_small'
+            .product--description
+              = product.description
+              = "#{product.price} uah"
+              = product.description
+              = product.description
 
-  = paginate products
+  .pagination
+    = paginate products

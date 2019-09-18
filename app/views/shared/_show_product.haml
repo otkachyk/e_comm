@@ -1,0 +1,25 @@
+.wrapped-layout
+  .item-overview
+    .item-overview--container
+      .item-overview--title-info
+        = product_item.title
+    .item-overview--container
+      .item-overview--controls
+        'main desc photo feedbacks'
+    .item-overview--container
+      .item-overview--main-info
+        .item-overview--slider-images
+
+        .item-overview--info-section
+          .item-overview--buy-actions-section
+            .item-overview-price
+              %span.price-number.-large= product_item.price
+            .item-overview-buy
+              = render 'components/buy_button_small'
+          .item-overview--basic-actions-section
+            .item-overview-compare
+              %i.fa.fa-balance-scale{ title: "Додати до порівняння"}
+            .item-overview-track
+              'стежити за ціною'
+          .item-overview--delivery-section
+            'деталі доставки'
