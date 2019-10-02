@@ -15,4 +15,6 @@
 class Laptop < ApplicationRecord
   paginates_per 30
 
+  include Productable
+
 end
